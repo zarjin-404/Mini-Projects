@@ -9,27 +9,9 @@
   <body class="w-full h-screen bg-zinc-900 flex items-center justify-center">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
       <h2 class="text-2xl sm:text-xl font-bold mb-6 text-center text-zinc-800">
-        Register
+        Login
       </h2>
-      <form action="/register" method="post" class="flex flex-col gap-4">
-        <!-- Name Field -->
-        <div class="relative">
-          <span class="absolute left-2 top-3 text-zinc-400">
-            <i class="fas fa-user"></i>
-          </span>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Name"
-            required
-            class="peer w-full p-2 pl-10 rounded-md border border-zinc-300 focus:border-zinc-500 focus:outline-none"
-          />
-
-          <p class="text-red-500 text-sm mt-1 hidden" id="name-error">
-            Please enter a valid name.
-          </p>
-        </div>
+      <form action="/login" method="post" class="flex flex-col gap-4">
         <!-- Email Field -->
         <div class="relative">
           <span class="absolute left-2 top-3 text-zinc-400">
@@ -71,7 +53,7 @@
           type="submit"
           class="bg-zinc-800 text-white p-2 rounded-md hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-500 transition-colors"
         >
-          Register
+          Login
         </button>
       </form>
     </div>
