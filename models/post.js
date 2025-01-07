@@ -12,7 +12,10 @@ const postSchema = new monggoose.Schema(
         ref: 'user',
       },
     ],
-    content: String,
+    content: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );
