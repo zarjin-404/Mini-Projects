@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Update Post</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto my-20">
+      <form
+        action="/update/<%= post._id %>"
+        method="post"
+        class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto"
+      >
+        <h1 class="text-2xl font-bold mb-4">Update Your Post</h1>
+        <textarea
+          name="content"
+          class="w-full h-32 p-4 border border-gray-300 rounded-lg mb-4"
+          placeholder="Update your post here"
+        >
+<%= post.content %></textarea
+        >
+        <button
+          type="submit"
+          class="bg-green-600 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition duration-300 w-full"
+        >
+          Update Post
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
